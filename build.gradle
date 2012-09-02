@@ -1,14 +1,20 @@
 task wrapper(type: Wrapper) {
-  gradleVersion = '1.1'
+    gradleVersion = '1.1'
 }
 
 allprojects {
-  repositories {
-      mavenCentral()
-  }
+    repositories {
+        mavenCentral()
+    }
 }
 
 defaultTasks 'build'
 
 apply plugin: 'groovy'
 apply plugin: 'idea'
+
+dependencies {
+    compile group: "org.apache.commons", name: "commons-lang3", version: '3.1'
+    compile group: "com.netflix.astyanax", name: "astyanax", version: '1.0.6'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
