@@ -1,0 +1,14 @@
+task wrapper(type: Wrapper) {
+  gradleVersion = '1.1'
+}
+
+allprojects {
+  repositories {
+      mavenCentral()
+  }
+}
+
+defaultTasks 'build'
+
+apply plugin: 'groovy'
+apply plugin: 'idea'
