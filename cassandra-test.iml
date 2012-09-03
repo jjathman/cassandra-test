@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/groovy" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.clover" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
